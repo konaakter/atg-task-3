@@ -3,7 +3,6 @@ import { Link, useNavigate } from 'react-router-dom';
 import UserDetails from './UserDetails';
 import { useQuery } from '@tanstack/react-query';
 import { PacmanLoader } from 'react-spinners';
-//import PacmanLoader from "react-spinners/ClipLoader";
 
 
 
@@ -47,10 +46,10 @@ const Home = () => {
 
 
     const handledata = (data) => {
-        refetch()
+       
         console.log(data)
         setdatas(data)
-
+        refetch()
     }
 
     console.log(dataa)
@@ -101,7 +100,9 @@ const Home = () => {
                             datas ?
                                 <div className='w-[300px] lg:w-96 mx-auto'>
                                     <div className=' w-24 mx-auto mt-5'>
-                                        <img className=' rounded-full w-28' src={datas.avatar} alt="" />
+                                       <img className=' rounded-full w-28' src={datas.avatar} alt="" />
+                                      
+                                        
                                     </div>
                                     <h1 className=' text-center mb-5 mt-4'>{datas?.profile?.firstName}</h1>
 
