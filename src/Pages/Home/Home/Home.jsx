@@ -40,13 +40,13 @@ const Home = () => {
         </div>
     }
 
-    
+
 
 
 
 
     const handledata = (data) => {
-       
+
         console.log(data)
         setdatas(data)
         refetch()
@@ -100,11 +100,16 @@ const Home = () => {
                             datas ?
                                 <div className='w-[300px] lg:w-96 mx-auto'>
                                     <div className=' w-24 mx-auto mt-5'>
-                                       <img className=' rounded-full w-28' src={datas.avatar} alt="" />
-                                      
-                                        
+                                        <div className="avatar">
+                                            <div className="mask mask-squircle w-24 h-24 border">
+                                                <img src={datas.avatar} alt="" />
+                                            </div>
+                                        </div>
+                                       
+
+
                                     </div>
-                                    <h1 className=' text-center mb-5 mt-4'>{datas?.profile?.firstName}</h1>
+                                    <h1 className=' text-center mb-5 mt-4 text-xl font-bold'>@ {datas?.profile?.firstName}</h1>
 
 
                                     <div className=' space-y-4'>
