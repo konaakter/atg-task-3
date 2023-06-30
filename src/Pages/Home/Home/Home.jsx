@@ -57,10 +57,10 @@ const Home = () => {
 
     return (
         <div className=' mt-40 w-10/12 mx-auto'>
-            <div className=' flex gap-28'>
+            <div className=' lg:flex  gap-28 '>
 
-                <div>
-                    <div className=' bg-[#C5DFFF] w-[500px] py-5 px-40 rounded-t-xl'>
+                <div className=' lg:mb-1 mb-20'>
+                    <div className=' bg-[#C5DFFF] w-[350px] lg:w-[500px] py-5 px-40 rounded-t-xl'>
                         <h1 className=' text-3xl'>USERS LIST</h1>
                     </div>
 
@@ -92,14 +92,14 @@ const Home = () => {
                 <div>
 
 
-                    <div className=" w-[450px] bg-base-100 ">
+                    <div className="w-[350px]  lg:w-[450px] bg-base-100 ">
                         <div className=' bg-[#C5DFFF]  py-5 px-20 rounded-t-xl'>
                             <h1 className=' text-3xl'>USER DETAILS</h1>
                         </div>
 
                         {
                             datas ?
-                                <div className=' w-96 mx-auto'>
+                                <div className='w-[300px] lg:w-96 mx-auto'>
                                     <div className=' w-24 mx-auto mt-5'>
                                         <img className=' rounded-full w-28' src={datas.avatar} alt="" />
                                     </div>

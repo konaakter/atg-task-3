@@ -7,7 +7,7 @@ const UserDetails = ({ data,  handledata,  refetch }) => {
     return (
         <div>
 
-            <div onClick={() => handledata(data)} className=' bg-[#ECECEC] w-[500px] py-5 px-4  flex gap-x-5 items-center'>
+            <div onClick={() => handledata(data)} className=' bg-[#ECECEC] w-[350px] lg:w-[500px] py-5 px-4  flex gap-x-5 items-center'>
                 <div>
                 
                     {
